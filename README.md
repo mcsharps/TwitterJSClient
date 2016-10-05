@@ -42,7 +42,7 @@ You need to create a [Twitter app](https://dev.twitter.com/apps) to use the API.
     // twitterAccessToken='xxx'
     // twitterAccessTokenSecret='xxx'
     // twitterCallBackUrl='xxx'
-    
+    // an example .env file is included in the root of this project. make sure to gitignore this file when committing.
     var twitter = new Twitter();
 	
 	//Example calls
