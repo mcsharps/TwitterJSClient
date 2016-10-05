@@ -36,9 +36,12 @@ You need to create a [Twitter app](https://dev.twitter.com/apps) to use the API.
     	"callBackUrl": "XXX"
 	}
 
-	// make a directory in the root folder of your project called data
-	// copy the node_modules/twitter-node-client/twitter_config file over into data/twitter_config`
-	// Open `data/twitter_config` and supply your applications `consumerKey`, 'consumerSecret', 'accessToken', 'accessTokenSecret', 'callBackUrl' to the appropriate fields in your data/twitter_config file
+	// Create a .env file in the root of your project and supply your applications keys using key=value style e.g.
+    // twitterConsumerKey='xxx'
+    // twitterConsumerSecret='xxx'
+    // twitterAccessToken='xxx'
+    // twitterAccessTokenSecret='xxx'
+    // twitterCallBackUrl='xxx'
     
     var twitter = new Twitter();
 	
