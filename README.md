@@ -36,14 +36,22 @@ You need to create a [Twitter app](https://dev.twitter.com/apps) to use the API.
     	"callBackUrl": "XXX"
 	}
 
-	// Create a .env file in the root of your project and supply your applications keys using key=value style e.g.
-    // twitterConsumerKey='xxx'
-    // twitterConsumerSecret='xxx'
-    // twitterAccessToken='xxx'
-    // twitterAccessTokenSecret='xxx'
-    // twitterCallBackUrl='xxx'
-    // an example .env file is included in the root of this project. make sure to gitignore this file when committing.
+	// The twitter data can be then added via process environment variables or passed in as an object to the module.
+    // the preferred method is to use process environment variables to keep your keys out of github.
+    // If you include it on your process environment variables you can just do
     var twitter = new Twitter();
+    // and the library will look on environment variables for your keys.
+    // alternatively you can
+    // pass a config object that will look like this below, but remember to not push these key containing files to
+    // github as they can be easily compromised.
+    // var config = {
+    // consumerKey='xxx'
+    // consumerSecret='xxx'
+    // accessToken='xxx'
+    // accessTokenSecret='xxx'
+    // callBackUrl='xxx'
+    // };
+    // var twitter = new Twitter(config);
 	
 	//Example calls
 
